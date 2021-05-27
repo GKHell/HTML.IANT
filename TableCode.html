@@ -20,20 +20,27 @@
 			/*color:linear-gradient(to right,#505050,#FFFFFF);*/
 			background: transparent;
 			color: transparent;
-
-
 		}
 		#a:hover,#b:hover,#c:hover,#d:hover,#e:hover,#f:hover,#g:hover,#h:hover,#i:hover{
 			background: white;
 			color: red;
 		}
+		tr:nth-child(even){
+			background: red;
+		}
 	</style>
 </head>
 <body>
-	<table border="1" align="center" class="c1">
-
-		<tr  ><th id="a">A</th><th id="b">B</th><th id="c">C</th></tr>
-		<tr ><td id="d">D</td><td id="e">E</td><td id="f">F</td></tr>
+	<table border="1" align="center" class="c1" cellpadding="4px" cellspacing="20px">
+		<caption>TASK</caption>
+		<tr  ><th id="a">A</th><th id="b" rowspan="2">
+			
+				<table align="center" cellpadding="4px" cellspacing="20px">
+					<tr><td>5</td><td>6</td></tr>
+					<tr><td>1</td><td>4</td></tr>
+				</table>
+		</th><th id="c">C</th></tr>
+		<tr ><td id="d">D</td><td id="f">F</td></tr>
 		<tr  ><td id="g">G</td><td id="h">H</td><td id="i">I</td></tr>
 	</table>
 </body>
