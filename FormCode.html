@@ -2,16 +2,71 @@
 <html>
 <head>
 	<title></title>
+	<!-- <link rel="stylesheet" type="text/css" href="hell.css"> -->
+	<!-- <link rel="stylesheet" type="text/css" href=""> -->
+	<style type="text/css">
+		fieldset{
+	background: linear-gradient(to right,#AAAAAA,#FFFFFF);
+
+		}
+	</style>
 </head>
 <body>
 	<form target="">
+		<fieldset><legend align="center">Code</legend>
 		<table>
 			<tr><td>Name</td><td><input type="text" name="username"></td></tr>
+			<tr><td>Gender</td><td><input type="radio" value="male" name="l">Male
+									<input type="radio" value="Female"name="l">Female</td></tr>
+
+			<tr><td>Subject</td><td>
+				
+				<input type="checkbox" >Python1
+				<input type="checkbox" >Python2
+				<input type="checkbox" >Python3
+
+			</td></tr>
+
+			<tr> <td>Date</td><td>
+				<input type="date" name=""><br/>
+			<pre>
+				datetime : <input type="datetime" name=""><br/>
+		  datetime-local : <input type="datetime-local" name=""><br/>
+				   Month : <input type="month" name=""><br/>
+				    time : <input type="time" name=""><br/>
+				    week : <input type="week" name=""><br/>
+
+  
+
+				      </pre>
+
+			</td></tr>
+			<tr><td>SELECT : </td><td>
+					<select>
+						<optgroup label="grp 1">
+						         <option>Python 1</option>
+						         <option>Python 2</option>
+						         <option>Python 3</option>
+						</optgroup>
+						<optgroup label="grp 2">
+
+						         <option>Python 4</option>
+						         <option selected>Python 5</option>
+						         <option>Python 6</option>
+						         <option>Python 7</option>
+						</optgroup>
+
+					</select></tr>
+					<tr>
+			</td><td>Address : </td> <td><textarea rows="4" cols="10"></textarea></td></tr>
+			<tr><td><button autofocus formaction="https://www.fb.com"> CODE 1</button> </td></tr>
+			<tr><td><button autofocus formaction="https://www.instagram.com"> CODE 2</button> </td></tr>
+
 			<tr><td>password</td><td><input type="password" name="userpass"></td></tr>
-			<tr><td><input type="submit"></td></tr>
+			<tr><td><input type="submit" autofocus></td></tr>
 
 		</table>
-
+		</fieldset>
 	</form>
 </body>
 </html>
