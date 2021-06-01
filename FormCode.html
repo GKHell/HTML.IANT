@@ -12,6 +12,11 @@
 	</style>
 </head>
 <body>
+	<form name="you"  style="margin-left: 80%;margin-top: 0px" oninput="n3.value = parseInt(n1.value)+parseInt(n2.value)">
+		<tr><td><input type="number" name="n1"></td>
+			<td><input type="number" name="n2"></td></tr>
+			<tr><output name="n3"></output></tr>
+	</form>
 	<form target="">
 		<fieldset><legend align="center">Code</legend>
 		<table>
@@ -36,8 +41,7 @@
 				    time : <input type="time" name=""><br/>
 				    week : <input type="week" name=""><br/>
 
-  
-
+ 
 				      </pre>
 
 			</td></tr>
@@ -58,15 +62,24 @@
 
 					</select></tr>
 					<tr>
-			</td><td>Address : </td> <td><textarea rows="4" cols="10"></textarea></td></tr>
-			<tr><td><button autofocus formaction="https://www.fb.com"> CODE 1</button> </td></tr>
-			<tr><td><button autofocus formaction="https://www.instagram.com"> CODE 2</button> </td></tr>
-
-			<tr><td>password</td><td><input type="password" name="userpass"></td></tr>
+			</td><td><label for="n1">Address : </label></td> <td><textarea rows="4" cols="10" name="n1"></textarea></td></tr>
+			<tr><td><button formaction="https://www.fb.com"> CODE 1</button> </td></tr>
+			<tr><td><button formaction="https://www.instagram.com"> CODE 2</button> </td></tr>
+			<tr><td>list : </td><td><input list="myCode" name="user"></td></tr>
+			<datalist id="myCode">
+				<option>Hell 1</option>
+				<option>Hell 2</option>
+				<option>Hell 3</option>
+				<option>Hell 4</option>
+				<option>Hell 5</option>
+			</datalist>
+			<keygen name="you" autofocus style="color: red;"></keygen>
+			<tr><td>password</td><td><input type="password" name="userpass" ></td></tr>
 			<tr><td><input type="submit" autofocus></td></tr>
 
 		</table>
 		</fieldset>
 	</form>
+	
 </body>
 </html>
