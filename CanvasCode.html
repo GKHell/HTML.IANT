@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		canvas{
+			border: 2px red solid;
+		}
+	</style>
+</head>
+<body>
+	<canvas id="myCode" height="500px" width="800px"></canvas>
+
+	<script type="text/javascript">
+		var canvas = document.getElementById('myCode');
+		var object = canvas.getContext("2d");
+		object.font = "70px cooper"
+		object.fillText("HELLOWORLD",40,400);
+		object.moveTo(1000,400)
+		object.lineTo(40,400)
+		object.stroke();
+
+	</script>
+</body>
+</html>
