@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		P{
+			height: 100px;
+			width: 100px;
+			background: black;
+			position: relative;
+			animation-delay: 1s;
+			animation: Hell 3s 2 alternate;
+		}
+
+		
+		@keyframes Hell{
+			          0%{left: 0px;background: red;transform: rotate(45deg);}
+			 30%{left: 900px;background: lawngreen;transform: rotate(455deg);}
+			  70%{left: 400px;background: deeppink;transform: rotate(345deg);}
+			 100%{    left: 900px;background: blue;transform: rotate(455deg);
+			 }
+
+		}
+		
+	</style>
+</head>
+<body>
+	<p style="animation-timing-function: ease;animation-fill-mode: forwards;"></p>
+	<p style="animation-timing-function: ease-in-out;animation-fill-mode:backwards;animation-play-state: paused;"></p>
+	<p  style="animation-timing-function: linear;animation-fill-mode: none;"></p>
+	<p style="animation-duration: 3s;"></p>
+
+</body>
+</html>
