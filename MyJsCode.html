@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		button{
+			width: 50px;
+			height: 40px;
+			background: red;
+		}
+	</style>
+	<!-- External js -->
+	<script src="SumCode.js"></script>
+</head>
+<body id="me">
+		<!-- internal js -->
+		<script type="text/javascript"> 
+			function Code()
+			{
+				var obj = document.getElementById('me');
+				obj.style.background = "black"
+			}
+			
+		</script>	
+		<button onclick="Code()">click</button>
+		<button onclick="sum('hello',34)">sum</button>
+</body>
+</html>
