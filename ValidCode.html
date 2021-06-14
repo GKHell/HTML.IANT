@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="hell.css">
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		td{
+			text-align: right;
+		}
+	</style>
+	<script type="text/javascript">
+		function valid(){
+			var a = document.forms['me']['username'].value
+			var b = document.forms['me']['userpass'].value
+
+				if(a=='Gk' && b=='123')
+				{
+					return true
+				}
+				alert("Invalid user name....");
+			return false
+		}
+		function seeme() {
+
+			var me = document.getElementById('m1')
+			me.style.background = "green";
+			
+		}
+	</script>
+</head>
+<body>
+		<form name="me" onsubmit="return valid()" action="https:www.fb.com">
+			<table>
+				<tr><td>userName : </td><td><input type="text" name="username"></td></tr>
+
+				<tr><td>userPass : </td><td><input type="password" name="userpass" oninput="seeme()"></td></tr>
+				
+				<tr><td colspan="2"><center><button type="submit" id="m1">Submit</button></td></tr>
+			</table>
+		</form>
+</body>
+</html>
