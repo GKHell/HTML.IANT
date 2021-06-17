@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+	</script>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+
+			$("button:first").click(function(){
+					$("p").toggle();
+			})
+
+			$("p").mouseenter(function(){
+				$(this).css({"color":"red","opacity":"0.5","font-size":"50px"})
+			})
+
+			$("p").mouseleave(function(){
+				$("p").css({"border":"2px red outset","color":"black","opacity":"1"});
+			})
+			$("#insert").dblclick(function(){
+				$("p").css("border","2px red outset");
+			})
+			$("p").mousedown(function(){
+				$("p").css("display","hidden");
+			})
+			$("p").mouseup(function(){
+				$("p").css("visibility","hidden");
+			})
+		})
+	</script>
+</head>
+<body>
+	<button >Hide / Show</button>
+	<button id="insert">insert Border</button>
+	<button id="seeme">seeme</button>
+		<p>
+			There are a number of settings available to customize the behavior of LoremText and The default settings can be viewed by accessing the Preferences > Package Settings > LoremText > Settings – Default menu entry. But make sure all customized settings should be saved to Settings – User to prevent them from being overridden during an upgrade.
+		</p>
+
+		
+</body>
+</html>
