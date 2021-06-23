@@ -16,6 +16,13 @@
 					var data = $("#me").val();
 					$("ul").prepend("<li>"+data+"</li>");
 				})
+
+				$("#btn3").click(function(){
+					$("div").empty();
+				})
+				$("#btn4").click(function(){
+					$("div").remove();
+				})
 		})
 	</script>
 </head>
@@ -24,12 +31,18 @@
 	<input type="text" id="me" style="border:inset;">
 	<button id="btn1">append</button>
 	<button id="btn2">prepend</button>
+	<button id="btn3">empty</button>
+	<button id="btn4">remove</button>
 
-		<ul>
+		<div style="background: pink;height: 300px;position: relative;" > 
+			<br>
+			<ul style="background: blue;margin-top:50px;position: relative;">
 			<li>Python</li>
 			<li>Java</li>
 			<li>asp.NET</li>
 			<li>html</li>
 		</ul>
-</body>
+
+		</div>	
+	</body>
 </html>
