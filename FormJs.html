@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+		
+	</script>
+	<style type="text/css">
+		input{
+			border: none;
+		}
+	</style>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			
+			$("input").focus(function(){
+				$(this).css({"background":"black","color":"white"});
+			})
+
+			$("input").blur(function(){
+				$(this).css({"background":"white","color":"black"});
+			})
+
+			$("form").hover(function(){
+				$("body").css({"background":"linear-gradient(to right,red,pink)"})
+			})
+
+			$("form").mouseleave(function(){
+				$("body").css({"background":"white"})
+			})
+		})
+	</script>
+</head>
+<body>
+	<form>
+		Name : <input type="text">
+		Code : <input type="number">
+		<button type="submit">submit</button>
+	</form>
+</body>
+</html>
