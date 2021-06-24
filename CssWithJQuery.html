@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("div").mouseenter(function(){
+					$(this).css({"background":"red","font-family":"Courier New"})
+			});
+
+			$("div").mouseleave(function(){
+				$(this).css({"background":"linear-gradient(to right,red,blue)","font-family":"none"})
+			})
+
+			$("#btn1").click(function(){
+				$("svg").fadeIn(1000);
+			})
+			$("#btn2").click(function(){
+				$("svg").fadeOut(1000);
+			})
+
+			$("#btn3").click(function(){
+				$("svg").slideUp(1000);
+			})
+
+			$("#btn4").click(function(){
+				$("svg").slideDown(1000);
+			})
+
+			$("#btn5").click(function(){
+				$("svg").stop();
+			})
+			 
+		})
+	</script>
+	<style type="text/css">
+		div{
+			background: linear-gradient(to right,red,blue);
+			color: white;
+			font-size: 24px;
+		}
+	</style>
+</head>
+<body>
+			<button id="btn1">FadeIn</button>
+			<button id="btn2">FadeOut</button>
+			<button id="btn3">SlideUp</button>
+			<button id="btn4">SlideDown</button>
+			<button id="btn5">Stop</button>
+			 
+
+		<br>
+
+		<div>
+				Ipsum gubergren accusam lorem et eirmod dolore aliquyam diam sed accusam, et elitr sea amet voluptua, vero lorem accusam ut.
+				 One nor but scape than aught nor or with condemned. Been in thy the childe which. Dear and what that he sea ne of. Open soul and name felt would and ancient, and nor go there few condole florid might in than, fabled before to wins delphis where deadly scorching. That such that his she, harold can oh not control hellas can, of yet it within they since he.
+		</div> 
+			<svg style="background: black;width: 700px;height: 300px;" xmlns="http://www.w3.org/2000/svg">
+		<defs>
+    		<radialGradient id="g" cx="0.5" cy="0.5" r="0.5" fx="0.35" fy="0.35" fr="5%">
+      			<stop offset="0%" stop-color="white"/>
+      			<stop offset="100%" stop-color="darkseagreen"/>
+    		</radialGradient>
+  		</defs>
+
+		<circle cx="100" cy="100" r="50" fill="url(#g)" color-rendering="optimizeSpeed"/>
+		<text x="70" y="150" color-rendering="optimizeSpeed" style="font-size:200px;stroke:blue;fill:red;"> IANT</text>	
+	</svg>
+</body>
+</html>
